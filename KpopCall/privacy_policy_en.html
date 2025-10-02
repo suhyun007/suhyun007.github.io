@@ -1,108 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KpopCall - Privacy Policy</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-            border-bottom: 3px solid #007bff;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #007bff;
-            margin-top: 30px;
-        }
-        .last-updated {
-            text-align: center;
-            color: #666;
-            font-style: italic;
-            margin-bottom: 30px;
-        }
-        .contact-info {
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 5px;
-            margin-top: 30px;
-        }
-        .highlight {
-            background-color: #e8f4f8;
-            padding: 15px;
-            border-left: 4px solid #007bff;
-            margin: 20px 0;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - KpopCall</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+  }
+  
+  .header {
+    background: linear-gradient(135deg, #D4AF37 0%, #E6C767 100%);
+    padding: 40px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    font-weight: 300;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .content {
+    padding: 50px 40px;
+  }
+  
+  h2 {
+    color: #D4AF37;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 40px 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #E6C767;
+    position: relative;
+  }
+  
+  h2::before {
+    content: '✨';
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #555;
+    text-align: justify;
+  }
+  
+  ul {
+    margin: 20px 0;
+    padding-left: 0;
+  }
+  
+  li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+    color: #555;
+  }
+  
+  li::before {
+    content: '🎵';
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  strong {
+    color: #D4AF37;
+    font-weight: 600;
+  }
+  
+  a {
+    color: #D4AF37;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  
+  a:hover {
+    background: #D4AF37;
+    color: white;
+    transform: translateY(-1px);
+  }
+  
+  .highlight-box {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-left: 4px solid #D4AF37;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .contact-section {
+    background: linear-gradient(135deg, #D4AF37 0%, #E6C767 100%);
+    color: white;
+    padding: 30px;
+    margin: 40px -40px -50px -40px;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    color: white;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .contact-section h2::before {
+    content: '📧';
+  }
+  
+  .contact-section a {
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-section a:hover {
+    background: white;
+    color: #D4AF37;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .effective-date {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background: rgba(212, 175, 55, 0.1);
+    border-radius: 10px;
+    color: #D4AF37;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      padding: 20px 10px;
+    }
+    
+    .container {
+      border-radius: 15px;
+    }
+    
+    .header {
+      padding: 30px 20px;
+    }
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    .content {
+      padding: 30px 20px;
+    }
+    
+    .contact-section {
+      margin: 30px -20px -30px -20px;
+      padding: 25px 20px;
+    }
+  }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        <p class="last-updated">Last updated: September 2025</p>
 
-        <div class="highlight">
-            <p><strong>Important:</strong> KpopCall does not collect, store, or process any personal information from users.</p>
-        </div>
+<div class="container">
+  <div class="header">
+    <h1>Privacy Policy</h1>
+    <div class="subtitle">KpopCall - Your Trust, Our Commitment</div>
+  </div>
+  
+  <div class="content">
 
-        <h2>1. Introduction</h2>
-        <p>KpopCall ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains our approach to privacy and data protection when you use our mobile application.</p>
-
-        <h2>2. Information We Do NOT Collect</h2>
-        <p>KpopCall is designed with privacy in mind. We do not collect, store, or process any of the following:</p>
-        <ul>
-            <li>Personal information (name, email, phone number)</li>
-            <li>Location data</li>
-            <li>Device identifiers</li>
-            <li>Usage analytics or tracking data</li>
-            <li>Contact lists or address book information</li>
-            <li>Photos or media files</li>
-            <li>Any other personal or sensitive information</li>
-        </ul>
-
-        <h2>3. Local Data Storage</h2>
-        <p>The app may store data locally on your device for functionality purposes only. This data includes:</p>
-        <ul>
-            <li>App preferences and settings</li>
-            <li>Temporary cache files for better performance</li>
-            <li>User interface state information</li>
-        </ul>
-        <p>All locally stored data remains on your device and is never transmitted to our servers or third parties.</p>
-
-        <h2>4. Third-Party Services</h2>
-        <p>Our app does not integrate with third-party analytics, advertising, or data collection services. We do not use cookies or similar tracking technologies.</p>
-
-        <h2>5. Data Security</h2>
-        <p>Since we do not collect personal data, there is no personal information at risk. Any local data on your device is protected by your device's built-in security measures.</p>
-
-        <h2>6. Children's Privacy</h2>
-        <p>Our app is safe for users of all ages as we do not collect any personal information from anyone, including children under 13.</p>
-
-        <h2>7. Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy from time to time. If we make any material changes, we will notify users by updating the "Last updated" date at the top of this policy.</p>
-
-        <h2>8. Your Rights</h2>
-        <p>Since we do not collect personal information, there is no personal data to access, correct, or delete. You have full control over any local data stored on your device.</p>
-
-        <h2>9. Contact Us</h2>
-        <div class="contact-info">
-            <p>If you have any questions about this Privacy Policy, please contact us:</p>
-            <p><strong>Email:</strong> slee29707@google.com</p>
-        </div>
+    <div class="highlight-box">
+      <p><strong>KpopCall</strong> ("the App") respects your privacy and is committed to protecting your personal information. This policy explains what information we collect, how we use it, and your rights regarding your information.</p>
     </div>
+
+    <h2>1. Information We Collect</h2>
+    <p>The App does not require users to create an account to access any features. Optional login is available via Apple or Google accounts, which may provide us with the following information only if you choose to log in:</p>
+    <ul>
+      <li>Apple ID or Google account identifier (for login purposes only)</li>
+      <li>Notification preferences</li>
+    </ul>
+    <p>No other personal data, such as messages, contacts, or location, is collected.</p>
+
+    <h2>2. How We Use Your Information</h2>
+    <p>Information collected through optional login is used only to:</p>
+    <ul>
+      <li>Enable personalized notifications</li>
+      <li>Back up notification preferences for account continuity</li>
+    </ul>
+    <div class="highlight-box">
+      <p>We do <strong>not</strong> sell, share, or use this information for advertising purposes.</p>
+    </div>
+
+    <h2>3. Data Retention</h2>
+    <p>Your optional login data is retained only as long as necessary to provide the personalized features you opted into. Non-logged-in users have no personal data stored.</p>
+
+    <h2>4. Your Rights</h2>
+    <p>You may choose to delete your optional login account at any time. After deletion, your personal information will be removed from our systems.</p>
+
+    <div class="contact-section">
+      <h2>5. Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy or how your data is handled, please contact us:</p>
+      <a href="mailto:slee29709@gmail.com">slee29709@gmail.com</a>
+    </div>
+
+    <div class="effective-date">
+      <p><strong>Effective Date:</strong>October 1, 2025</p>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
