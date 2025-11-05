@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HaruFit – Your Daily Diet Companion</title>
+  <meta name="description" content="HaruFit helps you achieve your health goals with weight tracking, meal logging, and AI-powered diet guidance tailored to you." />
+  <meta property="og:title" content="HaruFit – Your Daily Diet Companion" />
+  <meta property="og:description" content="Track your weight, log your meals, and reach your goals with personalized AI guidance." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b0b0b" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: light dark; --bg:#ffffff; --fg:#111111; --muted:#555; --card:#ffffff; --cardBorder:#e5e7eb; --accent:#6E6BFF; --luna:#E6C767; --verse:#D4AF37; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#0b0b0b; --fg:#eaeaea; --muted:#b3b3b3; --card:#1e1e1e; --cardBorder:#2a2a2a; --accent:#8aa2ff; }
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--fg); line-height:1.65; }
+    .container { max-width: 1120px; margin: 0 auto; padding: 24px; }
+    header { display:flex; align-items:center; justify-content:space-between; padding: 16px 0; }
+    .brand { font-weight:700; font-size: 22px; letter-spacing:0.2px; display:flex; align-items:center; gap:10px; }
+    .brand .haru { color: var(--luna); }
+    .brand .fit { color: var(--verse); }
+    .nav a { color: var(--fg); text-decoration:none; margin-left:16px; opacity:.9; }
+    .nav a:hover { text-decoration:underline; }
+
+    .hero { padding: 24px 0 8px; display:grid; grid-template-columns: 1.1fr .9fr; gap:32px; align-items:center; }
+    .hero h1 { font-size: 40px; line-height:1.15; margin: 6px 0 12px; font-weight:700; }
+    .hero p.lead { font-size:18px; color: var(--muted); margin:0 0 20px; }
+    .cta { display:flex; gap:12px; flex-wrap:wrap; }
+    .btn { appearance:none; border:1px solid var(--cardBorder); background: var(--fg); color: var(--bg); padding:12px 16px; border-radius:10px; font-weight:600; text-decoration:none; }
+    .btn.secondary { background: transparent; color: var(--fg); }
+    .btn:hover { filter: brightness(1.05); }
+    .panel { background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)); border:1px solid var(--cardBorder); border-radius:16px; padding:18px; }
+    .mock { aspect-ratio: 4/3; border-radius:14px; border:1px dashed var(--cardBorder); display:flex; align-items:center; justify-content:center; color:var(--muted); }
+
+    .section { padding: 32px 0; }
+    .section h2 { font-size:26px; margin:0 0 12px; font-weight:700; }
+    .grid { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:16px; }
+    .card { background: var(--card); border:1px solid var(--cardBorder); border-radius:14px; padding:16px; }
+    .card h3 { margin:0 0 8px; font-size:18px; }
+    .card p { margin:0; color: var(--muted); }
+
+    .features-list { display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:14px; margin-top:10px; }
+    .feature { background: var(--card); border:1px solid var(--cardBorder); border-radius:12px; padding:12px 14px; }
+
+    .badge { display:inline-block; font-size:13px; padding:6px 10px; border-radius:999px; background: rgba(110,107,255,0.12); color: var(--accent); border:1px solid var(--cardBorder); }
+    footer { padding: 28px 0 40px; color: var(--muted); font-size:14px; }
+
+    @media (max-width: 900px) { .hero { grid-template-columns: 1fr; } .grid { grid-template-columns: 1fr; } .features-list { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand"><span class="haru">Haru</span><span class="fit">Fit</span></div>
+      <nav class="nav" aria-label="primary">
+        <a href="support_en.html">Support</a>
+        <a href="support_ko.html">Korean</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <span class="badge">Your daily health companion</span>
+        <h1>Track Weight, Log Meals, Reach Your Goals</h1>
+        <p class="lead">HaruFit makes diet management simple and sustainable. Record your weight daily, log your meals, and get personalized AI guidance to help you achieve your health goals.</p>
+        <div class="cta">
+          <a class="btn" href="#" aria-label="Download on the App Store">Download on the App Store</a>
+          <a class="btn secondary" href="support_en.html">Contact Support</a>
+        </div>
+      </div>
+      <div class="panel">
+        <div style="display: flex; gap: 12px; justify-content: center; align-items: center; flex-wrap: wrap;">
+          <img src="1.png" alt="HaruFit Weight Tracking Screen" style="width: 80px; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+          <img src="3-1.png" alt="HaruFit Meal Logging Screen" style="width: 80px; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+          <img src="4-1.png" alt="HaruFit Progress Chart Screen" style="width: 80px; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+          <img src="5-1.png" alt="HaruFit AI Consulting Screen" style="width: 80px; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <h2>Why HaruFit</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Weight Tracking</h3>
+          <p>Record your daily weight and visualize your progress with beautiful charts over time.</p>
+        </div>
+        <div class="card">
+          <h3>Meal Logging</h3>
+          <p>Easily log your meals—breakfast, lunch, dinner, and snacks—to track your daily nutrition.</p>
+        </div>
+        <div class="card">
+          <h3>AI Diet Guidance</h3>
+          <p>Get personalized diet advice and motivation powered by AI, tailored to your goals and progress.</p>
+        </div>
+      </div>
+
+      <div class="features-list">
+        <div class="feature">Progress charts and statistics</div>
+        <div class="feature">Multiple diet methods supported</div>
+        <div class="feature">Daily calorie goals tracking</div>
+        <div class="feature">Privacy-first: your data stays secure</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>How it works</h2>
+      <div class="card">
+        <p style="margin:0">HaruFit is designed for simplicity. Set your target weight, log your daily meals and weight, and receive personalized guidance from AI. Track your progress with visual charts and stay motivated on your health journey. That's it—straightforward and effective.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="cta">
+        <a class="btn" href="#">Get HaruFit</a>
+        <a class="btn secondary" href="support_en.html">Need help?</a>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 HaruFit · <a href="support_en.html">Support</a>
+    </footer>
+  </div>
+</body>
+</html>
+
+
