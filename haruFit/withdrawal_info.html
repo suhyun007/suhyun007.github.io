@@ -3,35 +3,304 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>계정 삭제 안내 / Account Deletion</title>
+  <title>Account Deletion Request - HaruFit</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height: 1.6; color:#111; padding:24px; background:#f7f7f8; }
-    .card { max-width:720px; margin:28px auto; background:#fff; border-radius:8px; padding:24px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
-    h1 { margin:0 0 12px 0; font-size:20px; }
-    p { margin:8px 0; }
-    .lang { margin-top:16px; padding-top:12px; border-top:1px solid #eee; }
-    .hint { font-size:13px; color:#666; margin-top:12px; }
-    .button { display:inline-block; margin-top:12px; padding:8px 12px; background:#0b84ff; color:#fff; border-radius:6px; text-decoration:none; }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+      line-height: 1.6; 
+      color:#111; 
+      padding:24px; 
+      background:#f7f7f8; 
+    }
+    .card { 
+      max-width:720px; 
+      margin:28px auto; 
+      background:#fff; 
+      border-radius:8px; 
+      padding:32px; 
+      box-shadow:0 6px 18px rgba(0,0,0,0.06); 
+    }
+    h1 { 
+      margin:0 0 8px 0; 
+      font-size:24px; 
+      font-weight:700;
+      color:#111;
+    }
+    .app-name {
+      font-size:20px;
+      font-weight:600;
+      color:#0b84ff;
+      margin-bottom:4px;
+    }
+    .developer-name {
+      color:#666;
+      font-size:14px;
+      margin-bottom:24px;
+    }
+    h2 { 
+      margin:24px 0 12px 0; 
+      font-size:18px;
+      font-weight:600;
+      color:#111;
+    }
+    h3 {
+      margin:16px 0 8px 0;
+      font-size:16px;
+      font-weight:600;
+      color:#333;
+    }
+    p { 
+      margin:8px 0; 
+      line-height:1.7;
+    }
+    .lang { 
+      margin-top:32px; 
+      padding-top:24px; 
+      border-top:2px solid #eee; 
+    }
+    .steps {
+      background:#f8f9fa;
+      border-left:4px solid #0b84ff;
+      padding:16px 20px;
+      margin:16px 0;
+      border-radius:4px;
+    }
+    .steps ol {
+      margin:8px 0 0 0;
+      padding-left:20px;
+    }
+    .steps li {
+      margin:8px 0;
+      line-height:1.6;
+    }
+    .data-list {
+      background:#fff;
+      border:1px solid #e0e0e0;
+      border-radius:4px;
+      padding:16px;
+      margin:12px 0;
+    }
+    .data-list ul {
+      margin:8px 0;
+      padding-left:20px;
+    }
+    .data-list li {
+      margin:6px 0;
+    }
+    .warning {
+      background:#fff3cd;
+      border:1px solid #ffc107;
+      border-radius:4px;
+      padding:12px 16px;
+      margin:16px 0;
+      color:#856404;
+    }
+    .info {
+      background:#e7f3ff;
+      border:1px solid #0b84ff;
+      border-radius:4px;
+      padding:12px 16px;
+      margin:16px 0;
+      color:#004085;
+    }
+    .contact {
+      background:#f0f0f0;
+      border-radius:4px;
+      padding:16px;
+      margin-top:24px;
+      font-size:14px;
+    }
+    .contact strong {
+      display:block;
+      margin-bottom:4px;
+      color:#111;
+    }
+    em {
+      font-style:normal;
+      font-weight:600;
+      color:#0b84ff;
+    }
   </style>
 </head>
 <body>
   <div class="card" role="main">
-    <h1>Account Deletion / 계정 삭제 안내</h1>
+    <!-- 앱/개발자 이름 -->
+    <div class="app-name">HaruFit</div>
+    <div class="developer-name">Developer: HaruFit Support Team</div>
+    
+    <h1>Account Deletion Request / 계정 삭제 요청</h1>
 
+    <!-- English Section -->
     <section class="lang" lang="en" aria-label="English instructions">
-        <h2>English</h2>
-        <p><strong>You can delete your account from the app's Profile screen.</strong></p>
-        <p>Please open the app and go to <em>Profile &gt; Delete Account</em>.</p>
+      <h2>How to Delete Your Account</h2>
+      
+      <div class="steps">
+        <p><strong>Follow these steps to delete your HaruFit account:</strong></p>
+        <ol>
+          <li>Open the <strong>HaruFit</strong> app on your device</li>
+          <li>Navigate to the <em>Profile</em> screen (usually accessible from the bottom navigation menu)</li>
+          <li>Tap on <em>Delete Account</em> or <em>Withdraw</em> (회원 탈퇴)</li>
+          <li>Confirm your deletion request</li>
+          <li>Your account and all associated data will be permanently deleted within <strong>30 days</strong></li>
+        </ol>
+      </div>
+
+      <div class="info">
+        <strong>⚠️ Important:</strong> Account deletion is permanent and cannot be undone. Please ensure you want to delete your account before proceeding.
+      </div>
+
+      <h2>What Data Will Be Deleted</h2>
+      
+      <div class="data-list">
+        <p>The following data will be <strong>permanently deleted</strong> from our servers:</p>
+        <ul>
+          <li><strong>Account Information:</strong>
+            <ul>
+              <li>Email address (if provided via social login)</li>
+              <li>Nickname/Display name</li>
+              <li>Age</li>
+              <li>Gender</li>
+            </ul>
+          </li>
+          <li><strong>Health & Fitness Data:</strong>
+            <ul>
+              <li>Height and weight measurements</li>
+              <li>Target weight goals</li>
+              <li>Daily calorie goals</li>
+              <li>Diet method preferences</li>
+            </ul>
+          </li>
+          <li><strong>Activity Records:</strong>
+            <ul>
+              <li>All meal entries (food items, calories, nutrients)</li>
+              <li>All weight tracking records</li>
+              <li>Diet start date</li>
+            </ul>
+          </li>
+          <li><strong>Profile Data:</strong>
+            <ul>
+              <li>Profile image (if uploaded)</li>
+              <li>Notification settings</li>
+            </ul>
+          </li>
+          <li><strong>Device Information:</strong>
+            <ul>
+              <li>Device ID (used for account identification)</li>
+              <li>Social login IDs (Google/Apple)</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <h2>Data Retention Period</h2>
+      
+      <div class="warning">
+        <p><strong>Deletion Timeline:</strong></p>
+        <ul style="margin:8px 0 0 20px; padding-left:0;">
+          <li>Your account deletion request will be processed <strong>immediately</strong></li>
+          <li>All personal data will be <strong>permanently deleted within 30 days</strong> of your request</li>
+          <li>Data backups (if any) will be deleted within <strong>60 days</strong></li>
+          <li>No data will be retained after the deletion period</li>
+        </ul>
+      </div>
+
+      <h2>What Happens After Deletion</h2>
+      <p>Once your account is deleted:</p>
+      <ul style="margin:8px 0; padding-left:20px;">
+        <li>You will no longer be able to access your account or data</li>
+        <li>All your health and fitness records will be permanently removed</li>
+        <li>You can create a new account at any time, but previous data cannot be recovered</li>
+      </ul>
     </section>
 
-    <section lang="ko" aria-label="한국어 안내">
-      <h2>한국어</h2>
-      <p><strong>앱의 프로필 화면에서 계정 삭제가 가능합니다.</strong></p>
-      <p>앱을 열고 <em>프로필 &gt; 회원 탈퇴</em> 메뉴를 이용해 주세요.</p>
+    <!-- Korean Section -->
+    <section class="lang" lang="ko" aria-label="한국어 안내">
+      <h2>계정 삭제 방법</h2>
+      
+      <div class="steps">
+        <p><strong>HaruFit 계정을 삭제하려면 다음 단계를 따르세요:</strong></p>
+        <ol>
+          <li>기기에서 <strong>HaruFit</strong> 앱을 실행합니다</li>
+          <li><em>프로필</em> 화면으로 이동합니다 (하단 네비게이션 메뉴에서 접근 가능)</li>
+          <li><em>회원 탈퇴</em> 또는 <em>Delete Account</em>를 탭합니다</li>
+          <li>삭제 요청을 확인합니다</li>
+          <li>계정 및 모든 관련 데이터가 <strong>30일 이내</strong>에 영구적으로 삭제됩니다</li>
+        </ol>
+      </div>
+
+      <div class="info">
+        <strong>⚠️ 중요:</strong> 계정 삭제는 영구적이며 되돌릴 수 없습니다. 계정을 삭제하기 전에 신중히 결정하시기 바랍니다.
+      </div>
+
+      <h2>삭제되는 데이터</h2>
+      
+      <div class="data-list">
+        <p>다음 데이터가 서버에서 <strong>영구적으로 삭제</strong>됩니다:</p>
+        <ul>
+          <li><strong>계정 정보:</strong>
+            <ul>
+              <li>이메일 주소 (소셜 로그인을 통해 제공된 경우)</li>
+              <li>닉네임/표시 이름</li>
+              <li>나이</li>
+              <li>성별</li>
+            </ul>
+          </li>
+          <li><strong>건강 및 피트니스 데이터:</strong>
+            <ul>
+              <li>키 및 체중 측정값</li>
+              <li>목표 체중</li>
+              <li>일일 칼로리 목표</li>
+              <li>다이어트 방법 설정</li>
+            </ul>
+          </li>
+          <li><strong>활동 기록:</strong>
+            <ul>
+              <li>모든 식사 기록 (음식 항목, 칼로리, 영양소)</li>
+              <li>모든 체중 추적 기록</li>
+              <li>다이어트 시작일</li>
+            </ul>
+          </li>
+          <li><strong>프로필 데이터:</strong>
+            <ul>
+              <li>프로필 이미지 (업로드한 경우)</li>
+              <li>알림 설정</li>
+            </ul>
+          </li>
+          <li><strong>기기 정보:</strong>
+            <ul>
+              <li>기기 ID (계정 식별용)</li>
+              <li>소셜 로그인 ID (Google/Apple)</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <h2>데이터 보관 기간</h2>
+      
+      <div class="warning">
+        <p><strong>삭제 일정:</strong></p>
+        <ul style="margin:8px 0 0 20px; padding-left:0;">
+          <li>계정 삭제 요청은 <strong>즉시</strong> 처리됩니다</li>
+          <li>모든 개인 데이터는 요청 후 <strong>30일 이내</strong>에 영구적으로 삭제됩니다</li>
+          <li>데이터 백업(있는 경우)은 <strong>60일 이내</strong>에 삭제됩니다</li>
+          <li>삭제 기간 이후에는 데이터가 보관되지 않습니다</li>
+        </ul>
+      </div>
+
+      <h2>삭제 후 결과</h2>
+      <p>계정이 삭제되면:</p>
+      <ul style="margin:8px 0; padding-left:20px;">
+        <li>계정 또는 데이터에 더 이상 접근할 수 없습니다</li>
+        <li>모든 건강 및 피트니스 기록이 영구적으로 제거됩니다</li>
+        <li>언제든지 새 계정을 만들 수 있지만, 이전 데이터는 복구할 수 없습니다</li>
+      </ul>
     </section>
 
-    <div class="hint">
-      help desk : slee29707@gmail.com / HaruFit Support
+    <!-- Contact Information -->
+    <div class="contact">
+      <strong>Need Help? / 도움이 필요하신가요?</strong>
+      <p style="margin:8px 0 0 0;">Email: <a href="mailto:slee29707@gmail.com">slee29707@gmail.com</a></p>
+      <p style="margin:4px 0 0 0;">Support: HaruFit Support Team</p>
     </div>
   </div>
 </body>
